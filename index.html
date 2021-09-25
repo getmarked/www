@@ -26,33 +26,20 @@
             font-family: Montserrat, sans-serif;
         }
 
-        .py-10rem {
-            padding-top: 10rem;
-            padding-bottom: 10rem;
-        }
-
-        .pt-20rem {
-            padding-top: 20rem;
-        }
-
         .line-height-05 {
             line-height: 1.2rem;
         }
 
         .redirect-link {
-
+            color: black;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 700;
         }
 
-        .grey-text-box {
-            padding-left: 2rem;
-            padding-right: 2rem;
-            min-height: 15rem;
-
-            background-color: #f9f9f9;
-            border: 1px solid #eeeeee;
-            border-radius: 15px;
-            font-family: "Open Sans", sans-serif;
-            font-size: 1.2rem;
+        .redirect-link:hover {
+            color: black;
+            text-decoration-color: yellow;
+            text-decoration-thickness: 0.2rem;
         }
 
         .vertical-center {
@@ -68,6 +55,17 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
+            background-position: 40rem;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .bg-img {
+                background-image: url("1.svg");
+                background-position:    0;
+            }
+
+            .dark-text {
+            }
         }
 
         .logo {
@@ -81,9 +79,8 @@
 
 </head>
 
-<body class="dark-text">
+<body class="dark-text bg-img">
 
-<section class="bg-img">
     <header><div class="logo p-3">GET<strong>MARKED</strong></div></header>
     <div class="container vertical-center">
 
@@ -98,17 +95,16 @@
                     See how we,
                 </p>
                 <p class="lead line-height-05">
-                    <a href="https://digitaliser.getmarked.ai">Automate the creation of your online e-assignment using your word or pdf quiz ></a>
+                    <a class="redirect-link" href="https://digitaliser.getmarked.ai">Automate the creation of your online e-assignment using your word or pdf quiz ></a>
                 </p>
                 <p class="lead line-height-05">
-                    <a href="https://mark.getmarked.ai">Automate the marking of your paper-based worksheets ></a>
+                    <a class="redirect-link" href="https://mark.getmarked.ai">Automate the marking of your paper-based worksheets ></a>
                 </p>
             </div>
 
         </div>
 
     </div>
-</section>
 
 <!-- Scripts -->
 <!-- Latest compiled and minified JavaScript -->
